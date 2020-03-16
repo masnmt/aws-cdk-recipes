@@ -1,0 +1,37 @@
+{
+  "name": "cloudfront-with-s3-and-api",
+  "description": "AWS CDK recipe: Setup CloudFront with S3 and API Gateway",
+  "version": "0.1.0",
+  "author": "masnmt (https://github.com/masnmt/)",
+  "license": "ISC",
+  "bin": {
+    "aws-cdk": "bin/app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "clean": "rm -rf cdk.out/ bin/*.js bin/*.d.ts lib/*.js lib/*.d.ts test/*.js test/*.d.ts"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.28.0",
+    "@types/jest": "^25.1.4",
+    "@types/node": "13.9.1",
+    "@types/source-map-support": "^0.5.1",
+    "jest": "^25.1.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.28.0",
+    "@aws-cdk/aws-cloudfront": "^1.28.0",
+    "@aws-cdk/aws-iam": "^1.28.0",
+    "@aws-cdk/aws-lambda": "^1.28.0",
+    "@aws-cdk/aws-s3": "^1.28.0",
+    "@aws-cdk/aws-s3-deployment": "^1.28.0",
+    "@aws-cdk/core": "1.28.0",
+    "@aws-cdk/custom-resources": "^1.28.0",
+    "aws-cdk": "1.28.0",
+    "source-map-support": "^0.5.16",
+    "ts-node": "^8.6.2",
+    "typescript": "~3.8.3"
+  }
+}
